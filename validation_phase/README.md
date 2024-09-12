@@ -27,6 +27,7 @@ nnUNetv2_train 232 3d_fullres all
 
 ############### output where you put the prediction output########################
 input dataset directory
+
 test_folder
        
         MBAS_071
