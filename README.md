@@ -36,6 +36,8 @@ this is my folder /home/aqayyum/xLSTM-UNet-PyTorch/data to add best_student_mode
 
 ## Prediction
 
+resources_dir = '/home/aqayyum/docker_mine/MBAS_docker/resources' change your path
+> python prediction.py --gpu 0 --input_dir /home/aqayyum/docker_mine/MBAS_docker/test_folder/ --output_dir /home/aqayyum/docker_mine/MBAS_docker/output/
 
 ## Docker instructions
 
