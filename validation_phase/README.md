@@ -24,4 +24,11 @@ nnUNetv2_plan_and_preprocess -d 220 --verify_dataset_integrity
 nnUNetv2_train 232 3d_fullres all
 
 ## testing
+########### test_folder where you have input dataset#################################
+
+############### output where you put the prediction output########################
+
+resources_dir = '/home/aqayyum/docker_mine/MBAS_docker/val_docker/resources'  # Replace with your actual path
+
+> python prediction.py --gpu 0 --input_dir /home/aqayyum/docker_mine/MBAS_docker/val_docker/test_folder/ --output_dir /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/
 
