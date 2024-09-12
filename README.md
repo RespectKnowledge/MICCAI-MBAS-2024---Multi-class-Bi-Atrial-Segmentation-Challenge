@@ -29,12 +29,18 @@ Go to folder SSL_student_teacher and run the following command
 
 Go to folder /home/aqayyum/xLSTM-UNet-PyTorch/UxLSTM/nnunetv2/run add this file into this folder run_finetuning_xLSTM_bottom_model.py
 then run the following command
+download ssl weights
+https://mega.nz/file/8L90HTCS#1vhrsZ1NSHeXkNaygcd9Hx15t1oq8fFLMLUaJJslhF0
 
 this is my folder /home/aqayyum/xLSTM-UNet-PyTorch/data to add best_student_model_enco_bottom.pth trained student teacher model
 
 > CUDA_VISIBLE_DEVICES=0 python3 /home/aqayyum/xLSTM-UNet-PyTorch/UxLSTM/nnunetv2/run/run_finetuning_xLSTM_bottom_model.py 220 3d_fullres all -pretrained_weights /home/aqayyum/xLSTM-UNet-PyTorch/data/best_student_model_enco_bottom.pth -tr nnUNetTrainerUxLSTMBot -lr 0.001 -bs 2
 
 ## Prediction
+donwload the trained weight and put in fold_all folder
+https://mega.nz/file/tGs3TKDK#HI_aOR0j_pH7kqIxzvvVXE55E8etNQRmSAE5Kl-Ikdg
+
+> pip install -r requirements.txt
 
 resources_dir = '/home/aqayyum/docker_mine/MBAS_docker/resources' change your path
 > python prediction.py --gpu 0 --input_dir /home/aqayyum/docker_mine/MBAS_docker/test_folder/ --output_dir /home/aqayyum/docker_mine/MBAS_docker/output/
