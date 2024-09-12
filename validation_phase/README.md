@@ -35,3 +35,21 @@ resources_dir = '/home/aqayyum/docker_mine/MBAS_docker/val_docker/resources'  # 
 
 > python prediction.py --gpu 0 --input_dir /home/aqayyum/docker_mine/MBAS_docker/val_docker/test_folder/ --output_dir /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/
 
+## docker insstructions
+
+##### Instructions to run docker for MBAS2024 challenges
+
+################ build the docker##################################
+
+docker pull abdulenib/cemrg_mbas_test:latest
+
+###################### sometime we need permission to write the directory
+
+chmod -R 777 /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/ ################### this the output of your local machine #####################
+
+################################################# run the docker #####################
+
+docker pull abdulenib/cemrg_mbas_val:latest
+
+docker run --rm  --gpus '"device=0"' -v /home/aqayyum/docker_mine/MBAS_docker/val_docker/test_folder/:/input -v /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/:/output -it abdulenib/cemrg_mbas_val:latest
+
