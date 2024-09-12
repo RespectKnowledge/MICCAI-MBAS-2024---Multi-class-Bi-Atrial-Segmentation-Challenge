@@ -25,6 +25,10 @@ nnUNetv2_train 220 3d_fullres all
 
 ## Testing
 
+############ Please download trained weight from the following link and put in fold_all folder
+
+https://mega.nz/file/ULVmFBxL#ErooV4REjK9ezOkCbf2jeXwGIw3Lf2RgjWrVboEvU_k
+
 ############### output where you put the prediction output########################
 Input dataset directory
 
