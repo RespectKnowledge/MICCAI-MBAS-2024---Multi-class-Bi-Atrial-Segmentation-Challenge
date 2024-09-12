@@ -3,13 +3,23 @@
 
 ## Installation instructions
 git clone https://github.com/MIC-DKFZ/nnUNet.git
+
 cd nnUNet
+
 pip install -e .
+
 ### for testing simply 
 pip install nnunetv2
 
+## Dataset conversion
+
 ## Dataset preprocessing
+
+nnUNetv2_plan_and_preprocess -d 220 --verify_dataset_integrity
 
 ## Training
 
+nnUNetv2_train 232 3d_fullres all
+
 ## testing
+
