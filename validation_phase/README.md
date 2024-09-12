@@ -17,11 +17,11 @@ pip install nnunetv2
 
 ## Dataset preprocessing
 
-nnUNetv2_plan_and_preprocess -d 220 --verify_dataset_integrity
+> nnUNetv2_plan_and_preprocess -d 220 --verify_dataset_integrity
 
 ## Training
 
-nnUNetv2_train 220 3d_fullres all
+> nnUNetv2_train 220 3d_fullres all
 
 ## Testing
 
