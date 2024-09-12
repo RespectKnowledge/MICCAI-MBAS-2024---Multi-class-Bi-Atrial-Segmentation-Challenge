@@ -43,13 +43,16 @@ resources_dir = '/home/aqayyum/docker_mine/MBAS_docker/val_docker/resources'  # 
 
 docker pull abdulenib/cemrg_mbas_test:latest
 
-###################### sometime we need permission to write the directory
+###################### sometime we need permission to write the output directory ########
+######## this the output of your local machine ######################################
 
-chmod -R 777 /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/ ################### this the output of your local machine #####################
+chmod -R 777 /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/  
 
-################################################# run the docker #####################
+########################## pull docker image #####################
 
 docker pull abdulenib/cemrg_mbas_val:latest
+
+######################## run docker #####################
 
 docker run --rm  --gpus '"device=0"' -v /home/aqayyum/docker_mine/MBAS_docker/val_docker/test_folder/:/input -v /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/:/output -it abdulenib/cemrg_mbas_val:latest
 
