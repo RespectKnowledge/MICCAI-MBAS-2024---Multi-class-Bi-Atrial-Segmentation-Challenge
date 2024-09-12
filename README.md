@@ -29,7 +29,8 @@ Go to folder SSL_student_teacher and run the following command
 
 Go to folder /home/aqayyum/xLSTM-UNet-PyTorch/UxLSTM/nnunetv2/run add this file into this folder run_finetuning_xLSTM_bottom_model.py
 then run the following command
-#######this is my folder /home/aqayyum/xLSTM-UNet-PyTorch/data to add best_student_model_enco_bottom.pth trained student teacher model
+
+this is my folder /home/aqayyum/xLSTM-UNet-PyTorch/data to add best_student_model_enco_bottom.pth trained student teacher model
 
 > CUDA_VISIBLE_DEVICES=0 python3 /home/aqayyum/xLSTM-UNet-PyTorch/UxLSTM/nnunetv2/run/run_finetuning_xLSTM_bottom_model.py 220 3d_fullres all -pretrained_weights /home/aqayyum/xLSTM-UNet-PyTorch/data/best_student_model_enco_bottom.pth -tr nnUNetTrainerUxLSTMBot -lr 0.001 -bs 2
 
@@ -40,9 +41,9 @@ then run the following command
 
 > docker pull abdulenib/cemrg_mbas_test:latest
 
-###################### sometime we need permission to write the directory
+###################### sometime we need permission to write the directory ##############################
 
-> chmod -R 777 /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/ ################### this the output of your local machine #####################
+> chmod -R 777 /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/ 
 
 ################################################# run the docker #####################
 
