@@ -25,6 +25,8 @@ pip install nnunetv2
 
 ## Testing
 
+pip install -r requirements.txt
+
 ############ Please download trained weight and put inside the following folder path
 resources/nnUNet_results/Dataset220_MBAS/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_all
 
