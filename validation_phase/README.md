@@ -56,3 +56,6 @@ docker pull abdulenib/cemrg_mbas_test:latest
 
 > docker run --rm  --gpus '"device=0"' -v /home/aqayyum/docker_mine/MBAS_docker/val_docker/test_folder/:/input -v /home/aqayyum/docker_mine/MBAS_docker/val_docker/output/:/output -it abdulenib/cemrg_mbas_val:latest
 
+
+## Acknowledgement
+https://github.com/MIC-DKFZ/nnUNet
