@@ -14,7 +14,7 @@ pip install nnunetv2
 
 ## Dataset conversion
 ### please change input and output path of your system
-python3 preprocess_nnunet_conversion_MBAS2024.py
+> python3 preprocess_nnunet_conversion_MBAS2024.py
 ## Dataset preprocessing
 
 nnUNetv2_plan_and_preprocess -d 220 --verify_dataset_integrity
@@ -24,9 +24,12 @@ nnUNetv2_plan_and_preprocess -d 220 --verify_dataset_integrity
 nnUNetv2_train 232 3d_fullres all
 
 ## testing
-########### test_folder where you have input dataset#################################
 
 ############### output where you put the prediction output########################
+input dataset directory
+test_folder
+        MBAS_071
+             MBAS_071_gt.nii.gz
 
 resources_dir = '/home/aqayyum/docker_mine/MBAS_docker/val_docker/resources'  # Replace with your actual path
 
