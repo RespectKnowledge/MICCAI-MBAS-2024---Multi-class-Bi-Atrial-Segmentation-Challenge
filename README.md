@@ -15,6 +15,7 @@ Go to folder SSL_student_teacher and run the following command
 > python3 xlstm_bottom_ssl_updated1
 
 ## trained weight of Student Teacher model can be found here
+https://mega.nz/file/8L90HTCS#1vhrsZ1NSHeXkNaygcd9Hx15t1oq8fFLMLUaJJslhF0
 
 # Downstream part
 ## Dataset conversion
@@ -28,10 +29,7 @@ Go to folder SSL_student_teacher and run the following command
 ## Training
 
 Go to folder /home/aqayyum/xLSTM-UNet-PyTorch/UxLSTM/nnunetv2/run add this file into this folder run_finetuning_xLSTM_bottom_model.py
-then run the following command
-download ssl weights
-https://mega.nz/file/8L90HTCS#1vhrsZ1NSHeXkNaygcd9Hx15t1oq8fFLMLUaJJslhF0
-
+then run the following command.
 this is my folder /home/aqayyum/xLSTM-UNet-PyTorch/data to add best_student_model_enco_bottom.pth trained student teacher model
 
 > CUDA_VISIBLE_DEVICES=0 python3 /home/aqayyum/xLSTM-UNet-PyTorch/UxLSTM/nnunetv2/run/run_finetuning_xLSTM_bottom_model.py 220 3d_fullres all -pretrained_weights /home/aqayyum/xLSTM-UNet-PyTorch/data/best_student_model_enco_bottom.pth -tr nnUNetTrainerUxLSTMBot -lr 0.001 -bs 2
